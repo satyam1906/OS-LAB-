@@ -1,4 +1,6 @@
-echo "Enter a string"
-read string
-for i in string
-do 
+echo "Enter a String"
+read text
+
+
+word=$(echo -n "$text" | wc -w)
+echo "No. of words in string '$text' is: $word "
